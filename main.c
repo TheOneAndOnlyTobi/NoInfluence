@@ -77,19 +77,10 @@ int main(const int argc, char *argv[])
 
 
 
-    FILE *fp = fopen(filename,"r");
-
     int ch=0;
     int lines=1;
 
-    while(!feof(fp))
-    {
-        ch = fgetc(fp);
-        if(ch == '\n')
-        {
-            lines++;
-        }
-    }
+
 
 
 
